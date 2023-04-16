@@ -43,9 +43,9 @@ function playSound(name) {
 
 function animatePress(currentColor) {
     // Add this pressed class to the button that gets clicked inside animatePress()
-    $("#" + currentColor).addClass("pressed");
+    $("#" + currentColor).addClass(".pressed");
     // Remove the pressed class after a 100 milliseconds
     setTimeout(function () {
-        $("#" + currentColor).removeClass("pressed");
+        $("#" + currentColor).removeClass(".pressed");
       }, 100);
 }
