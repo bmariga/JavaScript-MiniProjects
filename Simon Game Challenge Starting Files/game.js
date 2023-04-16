@@ -40,3 +40,12 @@ function playSound(name) {
     var audio = new Audio("sounds/" + name + ".mp3");
     audio.play();
 }
+
+function animatePress(currentColor) {
+    // Add this pressed class to the button that gets clicked inside animatePress()
+    $("#" + currentColor).addClass("pressed");
+    // Remove the pressed class after a 100 milliseconds
+    setTimeout(function () {
+        $("#" + currentColor).removeClass("pressed");
+      }, 100);
+}
