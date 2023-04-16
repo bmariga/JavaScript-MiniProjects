@@ -15,6 +15,8 @@ $(".btn").click(function() {
     var userChosenColour = $(this).attr("id");
     // Add chosen colour to empty array userClickedPattern
     userClickedPattern.push(userChosenColour);
+    // Plays sound when clicked
+    playSound(userChosenColour);
 
 });
 
