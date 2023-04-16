@@ -30,9 +30,10 @@ function nextSequence() {
     gamePattern.push(randomChosenColour);
     // Fade in Fade out 
     $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
-    // Play sound when button clicked
-    var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
-    audio.play();
+    // To work for both playing sound in nextSequence() and when the user clicks a button
+
+    // Play sound when button clicked and in nextSequence
+    playSound(randomChosenColour);
 }
 
 function playSound(name) {
