@@ -33,5 +33,9 @@ function nextSequence() {
     // Play sound when button clicked
     var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
     audio.play();
-    
+}
+
+function playSound(name) {
+    var audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
 }
