@@ -1,7 +1,9 @@
-// Empty Array
-var gamePattern = [];
+
 //Array of colours
 var buttonColours = ["red","blue", "green", "yellow"];
+
+// Empty Array
+var gamePattern = [];
 
 // Function nextSequence
 function nextSequence() {
@@ -11,7 +13,11 @@ function nextSequence() {
     var randomChosenColour = buttonColours[randomNumber];
     // Add random colour to empty array
     gamePattern.push(randomChosenColour);
+
+    // Fade in Fade out 
+    $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+    // Play sound when button clicked
+    var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
+    audio.play();
     
 }
-// Fade in Fade out 
-$("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
