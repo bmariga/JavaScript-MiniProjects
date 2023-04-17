@@ -10,7 +10,6 @@ var userClickedPattern = [];
 
 // Keep track if game has started or not. Only call nextSequence on first keypress
 var started = false;
-
 // New level starts at 0
 var level = 0;
 
@@ -35,6 +34,7 @@ $(".btn").click(function() {
     userClickedPattern.push(userChosenColour);
     // Plays sound when clicked
     playSound(userChosenColour);
+    animatePress(userChosenColour);
 
 });
 
@@ -54,8 +54,6 @@ function nextSequence() {
     // Fade in Fade out 
     $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
     // To work for both playing sound in nextSequence() and when the user clicks a button
-
-    // Play sound when button clicked and in nextSequence
     playSound(randomChosenColour);
 }
 
