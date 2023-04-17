@@ -16,7 +16,7 @@ var level = 0;
 // Detects when a keyboard key has been pressed, when that happens for the first time, call nextSequence().
 $(document).keypress(function(){
     if(!started) {
-        // When game has started h1 changes to level 0
+        // When game has started h1 "Press A Key to Start" changes to "Level 0"
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
@@ -71,6 +71,9 @@ function checkAnswer(currentLevel) {
     setTimeout(function() {
         $("body").removeClass("game-over");
     },200);
+    // When user fails h1 "Press A Key to Start" changes to "Game Over"
+    $("#level-title").text("Game Over");
+
 }
 }
 
