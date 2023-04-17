@@ -8,6 +8,9 @@ var gamePattern = [];
 // Empty Array
 var userClickedPattern = [];
 
+// Keep track if game has started or not
+var started = false;
+
 // New level starts at 0
 var level = 0;
 
