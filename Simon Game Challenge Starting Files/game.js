@@ -62,6 +62,9 @@ function checkAnswer(currentLevel) {
 
 } else {
     console.log("Fail");
+
+    // Play sound wrong.mp3 when user fails
+    playSound("wrong");
 }
 }
 
@@ -70,7 +73,7 @@ function nextSequence() {
 
     // Reset the userClickedPattern to an empty array ready for the next level
     userClickedPattern = [];
-    
+
     // Increment level from 0 to 1, 2, ..... everytime nextSequence is called
     level++;
     // Update h1 to level number
