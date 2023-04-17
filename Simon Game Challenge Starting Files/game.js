@@ -8,6 +8,21 @@ var gamePattern = [];
 // Empty Array
 var userClickedPattern = [];
 
+// New level starts at 0
+var level = 0;
+
+// Detects when a keyboard key has been pressed, when that happens for the first time, call nextSequence().
+$(document).keypress(function(){
+    if(!started) {
+        // When game has started h1 changes to level 0
+        $("h1").text("Level " + level);
+        nextSequence();
+        started = true;
+
+    }
+
+});
+
 // Detect when buttons are clicked
 $(".btn").click(function() {
 
