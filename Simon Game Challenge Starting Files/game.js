@@ -65,6 +65,12 @@ function checkAnswer(currentLevel) {
 
     // Play sound wrong.mp3 when user fails
     playSound("wrong");
+    // Add this game-over class on body when user fails
+    $("body").addClass("game-over");
+    // Remove class after 200ms
+    setTimeout(function() {
+        $("body").removeClass("game-over");
+    },200);
 }
 }
 
