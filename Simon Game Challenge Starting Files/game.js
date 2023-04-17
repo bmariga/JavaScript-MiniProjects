@@ -15,7 +15,7 @@ var level = 0;
 $(document).keypress(function(){
     if(!started) {
         // When game has started h1 changes to level 0
-        $("h1").text("Level " + level);
+        $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
 
