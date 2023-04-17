@@ -74,6 +74,9 @@ function checkAnswer(currentLevel) {
     // When user fails h1 "Press A Key to Start" changes to "Game Over"
     $("#level-title").text("Game Over");
 
+    // Call statOver when user fails
+    startOver();
+
 }
 }
 
@@ -112,4 +115,14 @@ function animatePress(currentColor) {
     setTimeout(function () {
         $("#" + currentColor).removeClass("pressed");
       }, 100);
+}
+
+// Function startOver
+function startOver() {
+
+    // Reset values of level, gamePattern and started variables when user fails
+    level = 0;
+    gamePattern =[];
+    started = false;
+
 }
