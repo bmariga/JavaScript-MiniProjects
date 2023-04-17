@@ -8,7 +8,7 @@ var gamePattern = [];
 // Empty Array
 var userClickedPattern = [];
 
-// Keep track if game has started or not
+// Keep track if game has started or not. Only call nextSequence on first keypress
 var started = false;
 
 // New level starts at 0
