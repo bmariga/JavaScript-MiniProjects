@@ -32,11 +32,38 @@ $(".btn").click(function() {
     var userChosenColour = $(this).attr("id");
     // Add chosen colour to empty array userClickedPattern
     userClickedPattern.push(userChosenColour);
-    // Plays sound when clicked
+    // Plays sound when button clicked
     playSound(userChosenColour);
+    // Animation when button clicked
     animatePress(userChosenColour);
 
+    // After a user has clicked and chosen their answer, passes in the index of the last answer in the user's sequence.
+    checkAnswer(userClickedPattern.length-1);
+
 });
+
+// Function checkAnswer()
+function checkAnswer(currentLevel) {
+
+    // Check if the most recent user answer is the same as the game pattern. If so then log "success", otherwise log "wrong"
+    if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
+
+        console.log("success");
+
+        // If the user got the most recent answer, then checks that they have finished their sequence with another if statement.
+      if (userClickedPattern.length === gamePattern.length){
+
+        // Call nextSequence() after a 1000 millisecond delay.
+        setTimeout(function () {
+          nextSequence();
+        }, 1000);
+
+      }
+
+} else {
+    console.log("Fail");
+}
+}
 
 // Function nextSequence
 function nextSequence() {
