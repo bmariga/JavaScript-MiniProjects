@@ -67,6 +67,10 @@ function checkAnswer(currentLevel) {
 
 // Function nextSequence
 function nextSequence() {
+
+    // Reset the userClickedPattern to an empty array ready for the next level
+    userClickedPattern = [];
+    
     // Increment level from 0 to 1, 2, ..... everytime nextSequence is called
     level++;
     // Update h1 to level number
