@@ -37,6 +37,11 @@ $(".btn").click(function() {
 
 // Function nextSequence
 function nextSequence() {
+    // Increment level from 0 to 1, 2, ..... everytime nextSequence is called
+    level++;
+    // Update h1 to level number
+    $("#level-title").text("Level " + level);
+
     // Random number 0 - 3 
     var randomNumber = Math.floor(Math.random() * 4); 
     // Select a random colour
