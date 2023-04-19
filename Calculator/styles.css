@@ -52,10 +52,6 @@ button {
     padding: 20px; 
 }
 
-/* .button:hover {
-    background-color: azure;
-} */
-
 .btn-yellow {
     background-color: rgb(245, 146, 62);
     color: #fff;
