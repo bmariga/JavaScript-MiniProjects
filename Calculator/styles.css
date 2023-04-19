@@ -65,3 +65,10 @@ button {
     background-color: rgb(224, 224, 224);
 }
 
+.btn-equal {
+    background-color: green;
+}
+
+.btn-clear {
+    background-color: red;
+}
