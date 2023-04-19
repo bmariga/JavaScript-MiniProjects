@@ -55,3 +55,13 @@ button {
 /* .button:hover {
     background-color: azure;
 } */
+
+.btn-yellow {
+    background-color: rgb(245, 146, 62);
+    color: #fff;
+}
+
+.btn-grey {
+    background-color: rgb(224, 224, 224);
+}
+
