@@ -31,7 +31,7 @@ body {
 }
 
 @media(max-width:768px) {
-    #bar1 #bar2 {
+    #bar1, #bar2 {
         display: none;
     }
     .digital-clock {
@@ -40,6 +40,7 @@ body {
     }
     .digital-clock h1 {
         display: block;
+        margin-bottom: 10px;
     }
 }
 
