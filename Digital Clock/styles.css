@@ -42,5 +42,10 @@ body {
     .digital-clock h1 {
         display: block;
     }
+}
 
+@media(max-width:480px) {
+    .digital-clock {
+        font-size: 3rem;
+    }
 }
