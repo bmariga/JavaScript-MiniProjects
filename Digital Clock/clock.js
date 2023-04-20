@@ -1,3 +1,5 @@
+window.addEventListener("load",calculateTime)
+
 function calculateTime() {
 
     var date = new Date();
@@ -10,7 +12,7 @@ function calculateTime() {
     
     // Change to 12HR Format
     hour = hour % 12;
-    // Noon not to return 0
+    // Noon (12 PM)not to return 0
     hour = hour ? hour : "12";
     // Add O infront if hour < 10
     hour = hour < 10 ? "0" + hour : hour;
@@ -25,9 +27,8 @@ function calculateTime() {
     document.getElementById("seconds").innerHTML = seconds;
     document.getElementById("am-pm").innerHTML = ampm;
 
-
-
-
+    // Calculate time over and over again
+    setTimeout(calculateTime,1000);
 }
 
 calculateTime();
