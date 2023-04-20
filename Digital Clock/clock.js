@@ -7,6 +7,7 @@ function calculateTime() {
     var seconds = date.getSeconds();
     var ampm = hour >= 12 ? "PM" : "AM";
     var dayNames = ["SUN","MON","TUE","WED","THUR","FRI","SAT"];
+    
     // Change to 12HR Format
     hour = hour % 12;
     // Noon not to return 0
@@ -16,7 +17,14 @@ function calculateTime() {
     // Add 0 infront if minute < 10
     minute = minute < 10 ? "0" + minute : minute;
     // Add 0 infront if seconds < 10
-    seconds = seconds < 10 ? "0" + seconds : seconds;   
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+    document.getElementById("day").innerHTML = dayNames[dayNumber];
+    document.getElementById("hour").innerHTML = hour;
+    document.getElementById("minute").innerHTML = minute;
+    document.getElementById("seconds").innerHTML = seconds;
+    document.getElementById("am-pm").innerHTML = ampm;
+
 
 
 
