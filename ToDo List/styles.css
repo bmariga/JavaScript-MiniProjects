@@ -13,7 +13,6 @@ body {
 }
 
 .container {
-    border: 1px solid black;
     width: 90%;
     margin: auto;
 }
@@ -39,7 +38,6 @@ body {
     width: 80%;
     outline: none;
     padding: 8px;
-    border: 1px solid grey ;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px; 
 }
