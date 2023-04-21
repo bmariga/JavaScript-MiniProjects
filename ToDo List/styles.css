@@ -31,7 +31,6 @@ body {
 }
 
 .user-input {
-    border: 1px solid black;
     width: 350px;
     text-align: center;
 }
@@ -43,5 +42,19 @@ body {
     border: 1px solid grey ;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px; 
-
 }
+
+.user-input button {
+     cursor: pointer;
+     padding: 8px;
+     width: fit-content;
+     outline: none;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+
+.user-input button:hover {
+    background-color: grey;
+    transition: .5s;
+}
+ 
