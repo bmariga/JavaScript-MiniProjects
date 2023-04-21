@@ -13,7 +13,7 @@ function addItem() {
     var checkicon = document.createElement("i");
     var trashicon = document.createElement("i");
 
-    divParent.className = "item";
+    divParent.className = "items";
     divParent.innerHTML = "<div>"+ input.value +"</div>";
 
     checkicon.className = "fa-solid fa-circle-check";

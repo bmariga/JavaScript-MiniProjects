@@ -77,13 +77,27 @@ body {
 }
 
 .items:hover {
-    box-shadow: 0 0 20px #e22865 ;
-    border: 1px solid #e22865;
+    box-shadow: 0 0 20px black ;
+    border: 1px solid grey;
 }
 
-.item i {
+.items i {
     cursor: pointer;
     margin: 0 5px;
+    font-size: 20px;
+}
+
+@media(min-width:769px) {
+    .nav {
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav h2 {
+        margin: 20px 0;
+    }
+    .user-input {
+        width: 100%;
+    }
 }
 
 @media(max-width:768px) {
