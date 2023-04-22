@@ -9,4 +9,29 @@
 //  Control start stop timer
 var flag = false; 
 
-const timerContainer = document.getElementsByClassName("timer-container")[0];
+const timerContainer = document.geElementsByClassName("timer-container")[0];
+
+timerContainer.addEventListener("click", function() {
+    if (!flag) {
+        startTimer();
+        flag = true;
+    } else {
+        stopTimer();
+        flag = false;
+    }
+})
+
+function startTimer() {
+    if (timeBegan === null)
+    timeBegan = new Date();
+
+    if (timeStopped !== null)
+    stoppedDuration += (new Date() - timeStopped); 
+
+    startInterval = setInterval(clockRunning, 10);
+
+}
+
+function stopTimer() {
+     
+}
