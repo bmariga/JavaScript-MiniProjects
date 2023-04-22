@@ -7,4 +7,6 @@
 //  To stop the startInterval() method
  var startInterval = null;
 //  Control start stop timer
-var flag = false;
+var flag = false; 
+
+const timerContainer = document.getElementsByClassName("timer-container")[0];
