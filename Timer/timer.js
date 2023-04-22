@@ -33,5 +33,22 @@ function startTimer() {
 }
 
 function stopTimer() {
+    timeStopped = new Date();
+    clearInterval(startInterval);
      
+}
+
+function clockRunning() {
+    var currenTime = new Date();
+    var timeElapsed = new Date(currenTime - timeBegan - stoppedDuration);
+
+    var minutes = timeElapsed.getUTCMinutes();
+    var seconds = timeElapsed.getUTCSeconds();
+    var milliseconds = timeElapsed.getUTCMilliseconds();
+
+    milliseconds = Math.floor(milliseconds/10);
+
+    document.getElementById("timer-display").innerHTML = (minutes = minutes < 10 ? '0' + minutes:minutes) + ":" + 
+    (seconds = seconds < 10 ? '0' + seconds:seconds) + ":" + (milliseconds = milliseconds < 10 ? '0' + milliseconds:milliseconds)
+
 }
