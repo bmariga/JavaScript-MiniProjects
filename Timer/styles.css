@@ -1,0 +1,18 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.timer-container {
+    background-color: grey;
+    border: 5px solid black;
+    border-radius: 2px;
+    margin: 11%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 90px;
+    margin: 20px;
+}
+
