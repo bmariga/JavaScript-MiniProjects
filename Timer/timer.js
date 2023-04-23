@@ -29,7 +29,7 @@ function startTimer() {
     stoppedDuration += (new Date() - timeStopped); 
 
     startInterval = setInterval(clockRunning, 10);
-
+  
 }
 
 function stopTimer() {
@@ -49,6 +49,6 @@ function clockRunning() {
     milliseconds = Math.floor(milliseconds/10);
 
     document.getElementById("timer-display").innerHTML = (minutes = minutes < 10 ? '0' + minutes:minutes) + ":" + 
-    (seconds = seconds < 10 ? '0' + seconds:seconds) + ":" + (milliseconds = milliseconds < 10 ? '0' + milliseconds:milliseconds)
+    (seconds = seconds < 10 ? '0' + seconds:seconds) + ":" + (milliseconds = milliseconds < 10 ? '0' + milliseconds:milliseconds);
 
 }
