@@ -26,3 +26,7 @@ button {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+#color-code {
+    font-weight: 500;
+}
