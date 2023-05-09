@@ -66,13 +66,25 @@ h1 {
     border: none;
     border-bottom: 1px solid #4f7cf9b7;
     width: 60%;
-    height: 6vh;
+    height: 5vh;
     text-align: center;
     font-size: 20px;
 }
 
 button#calculate {
     color: #fff;
+    font-size: 15px;
+    background-color: rgba(128, 128, 128, 0.541);
+    border-radius: 10px;
+    padding: 10px 5px;
+    width: 70%;
+    cursor: pointer;
+    outline: none;
+    border: none;
     
+}
 
+button#calculate:hover {
+    background-color: rgba(0, 0, 0, 0.459);
+    transition: 1s ease;
 }
