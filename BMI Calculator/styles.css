@@ -80,11 +80,19 @@ button#calculate {
     width: 70%;
     cursor: pointer;
     outline: none;
-    border: none;
-    
+    border: none;   
 }
 
 button#calculate:hover {
     background-color: rgba(0, 0, 0, 0.459);
     transition: 1s ease;
+}
+
+.result {
+    padding: 10px 10px;
+}
+
+.result p {
+    font-weight: 600;
+    font-size: 18px;
 }
