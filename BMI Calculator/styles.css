@@ -51,4 +51,9 @@ h1 {
     background: #ffffffad;
     padding: 20px 0;
     margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.input label {
+    display: block;
 }
