@@ -88,17 +88,17 @@ button#calculate:hover {
     transition: 1s ease;
 }
 
-.results {
+.result {
     padding: 10px 10px;
 }
 
-.results p {
+.result p {
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 15px;
 }
 
-.results .result {
+.result #result {
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 15px;
