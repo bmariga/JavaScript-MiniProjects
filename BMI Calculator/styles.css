@@ -100,7 +100,7 @@ button#calculate:hover {
 
 .result #result {
     font-weight: 900;
-    font-size: 30px;
+    font-size: 25px;
     background-color: rgba(128, 128, 128, 0.432);
     display: inline-block;
     padding: 7px 20px;
