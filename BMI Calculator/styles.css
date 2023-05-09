@@ -64,7 +64,7 @@ h1 {
 .input input {
     outline: none;
     border: none;
-    border-bottom: 1px solid #4f7cf9b7;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.541);
     width: 60%;
     height: 5vh;
     text-align: center;
@@ -88,11 +88,18 @@ button#calculate:hover {
     transition: 1s ease;
 }
 
-.result {
+.results {
     padding: 10px 10px;
 }
 
-.result p {
+.results p {
     font-weight: 600;
     font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.results .result {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
