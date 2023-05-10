@@ -64,6 +64,7 @@ h1 {
 .input input {
     outline: none;
     border: none;
+    border-radius: 5px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.541);
     width: 60%;
     height: 5vh;
