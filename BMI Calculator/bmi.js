@@ -24,6 +24,18 @@ let bmi = (weight / (height ^ 2));
 
 document.querySelector("#result").innerHTML = bmi;
 
+// BMI Comment
+
+if(bmi < 18.5) {
+    document.querySelector(".comment").innerHTML = "You are Underweight";
+} else if(bmi >= 18.5 && bmi < 25) {
+    document.querySelector(".comment").innerHTML = "You are Healthy";
+} else if(bmi >= 25 && bmi < 30) {
+    document.querySelector(".comment").innerHTML = "You are Overweight";
+} else {
+    document.querySelector(".comment").innerHTML = "You are Obese";
+}
+
 
 
 
