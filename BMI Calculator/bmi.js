@@ -35,8 +35,4 @@ if(bmi < 18.5) {
 } else {
     document.querySelector(".comment").innerHTML = "You are Obese";
 }
-
-
-
-
 });
