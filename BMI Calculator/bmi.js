@@ -1,4 +1,4 @@
-// Select button 
+// Select button in HTML
 
 const btn = document.getElementById("calculate");
 
