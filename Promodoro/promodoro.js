@@ -1,6 +1,6 @@
 let timer = document.getElementById("timer");
 let mainContainer = document.querySelector(".main-container");
-let btn = document.querySelectorAll("button")[0];
+let btnStart = document.querySelectorAll("button")[0];
 let message = document.getElementById("info");
 let minutes = 24;
 let seconds = 60;
@@ -20,7 +20,7 @@ let startPromodoro = () => {
     seconds < 10 && (seconds = `0${seconds}`);
 
     // Stop interval
-    if (minutes < 0) {
+    if (minutes > 0) {
       clearInterval(interval);
       message.style.display = "block";
       message.innerHTML = "5 Minutes Break";
@@ -37,4 +37,4 @@ let startPromodoro = () => {
   }, 1000);
 };
 
-btn.addEventListener("click", startPromodoro);
+btnStart.addEventListener("click", startPromodoro);
